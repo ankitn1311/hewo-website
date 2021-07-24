@@ -74,14 +74,40 @@
         opacity: 0.8;
       }
       .home-menu {
-        top: 120px;
+        /* top: 120px; */
+        top: 20px;
+        display: flex;
+        right: 40px;
+        flex-direction: row;
       }
-      .home-heading {
-        margin-top: 200px;
+      .home-menu .item-name {
+        font-size: 4vh;
+      }
+      /* .home-heading { margin-top: 200px;
+      } */
+      .logo-text {
+        font-size: 2rem;
+        color: white;
+        margin-right: 1rem
+      }
+      
+      .play-music {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+
+      .dark-filter {
+   opacity: 0.3;
       }
       @media screen and (max-width: 991px) {
         .home-menu {
-          top: 120px;
+          top: 80px;
+          left: 0;
+          flex-direction: column;
+        }
+        .home-menu .item-name {
+          font-size: 5.6vh;
         }
         .home-job-title {
           text-align: center;
@@ -107,8 +133,7 @@
         style="background-image: url(images/home/cover.jpg)"
       ></div> -->
       <!-- HOME BG IMAGE -->
-
-      <video src="videos/rain.mp4" muted loop autoplay></video>
+      <video class='dark-filter' src="videos/social3.mp4" muted loop autoplay></video>
 
       <!-- HOME BG LOGO -->
       <!-- <div class="home-bg-logo">
@@ -188,7 +213,7 @@
       <!-- .home-footer -->
 
       <!-- FULL SCREEN TOGGLE -->
-      <div class="full-screen-wrap">
+      <!-- <div class="full-screen-wrap">
         <div class="top-left"></div>
         <div class="top-left-horiz"></div>
         <div class="top-right"></div>
@@ -197,7 +222,7 @@
         <div class="bottom-left-horiz"></div>
         <div class="bottom-right"></div>
         <div class="bottom-right-horiz"></div>
-      </div>
+      </div> -->
       <!-- FULL SCREEN TOGGLE -->
 
       <!-- REMOVE THIS MARKUP TO DISABLE BG AUDIO -->
@@ -210,6 +235,7 @@
       <!-- HOME BG MUSIC -->
       <div id="play-music" class="play-music autoplay">
         <div id="music-animation" class="music-animation">
+
           <span class="music-bar bar1"></span>
           <span class="music-bar bar2"></span>
           <span class="music-bar bar3"></span>
@@ -221,6 +247,7 @@
             >Music off</a
           >
         </div>
+        <span class="logo-text">Hewo<span>
       </div>
 
       <audio id="bg-music" loop src="audio/music1.mp3"></audio>

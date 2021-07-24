@@ -1603,9 +1603,10 @@ html.one-page-layout:not(.is-ajax-page-visible) .media-grid .media-cell {
 .music-animation {
   display: flex;
   margin-right: 10px;
+  margin-left: 10px;
   align-items: flex-end;
   position: relative;
-  top: -5px;
+  top: 0;
 }
 .music-bar {
   width: 1px;
