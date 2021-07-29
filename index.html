@@ -75,7 +75,7 @@
       }
       .home-menu {
         /* top: 120px; */
-        top: 20px;
+        top: 34px;
         display: flex;
         right: 40px;
         flex-direction: row;
@@ -107,16 +107,16 @@
           flex-direction: column;
         }
         .home-menu .item-name {
-          font-size: 5.6vh;
+          font-size: 4.6vh;
         }
         .home-job-title {
           text-align: center;
+          font-size: 1.5rem;
         }
         .one-page-layout .home-heading {
           align-self: center;
-          margin-top: 7vh;
-          text-align: left;
-          padding-left: calc(20px + 17vw);
+          margin-top: 8rem;
+          text-align: center;
         }
       }
     </style>
@@ -134,6 +134,7 @@
       ></div> -->
       <!-- HOME BG IMAGE -->
       <video class='dark-filter' src="videos/social3.mp4" muted loop autoplay></video>
+
 
       <!-- HOME BG LOGO -->
       <!-- <div class="home-bg-logo">
@@ -158,7 +159,9 @@
         <a href="contact.html" data-slug="contact">
           <span class="item-name">Contact Us</span>
         </a>
+       
       </nav>
+
       <!-- .home-menu -->
 
       <!-- .home-heading -->
@@ -183,7 +186,7 @@
                 >Launching Soon</span
               >
             </span>
-            <span class="home-text">Launching Soon</span>
+            <span class="home-text" style="color: #000000">Launching Soon</span>
             <span class="home-icon">
               <img src="images/ico/google.ico" alt="Play Store" />
               <!-- <img src="images/home/icon3.svg" alt="icon" /> -->
@@ -209,7 +212,10 @@
       <!-- .home-social -->
 
       <!-- .home-footer -->
-      <p class="home-footer">Copyright &copy; 2021 by Hewo</p>
+      <!-- <p class="home-footer">Copyright &copy; 2021 by Hewo</p> -->
+      <div class="home-footer">
+        <a onclick="switchLocation()">switch</a>
+      </div>
       <!-- .home-footer -->
 
       <!-- FULL SCREEN TOGGLE -->
@@ -250,7 +256,7 @@
         <span class="logo-text">Hewo<span>
       </div>
 
-      <audio id="bg-music" loop src="audio/music1.mp3"></audio>
+      <audio id="bg-music" loop src="audio/music4.mp3"></audio>
       <!-- HOME BG MUSIC -->
 
       <!-- REMOVE THIS MARKUP TO DISABLE BG AUDIO -->
@@ -283,6 +289,11 @@
     <!-- InstanceEndEditable -->
 
     <!-- SCRIPTS -->
+    <script>
+      function switchLocation () {
+        location.replace("/switch.html")
+      }
+    </script>
     <script src="js/tween-max.js"></script>
     <script src="js/jquery-address.js"></script>
     <script src="js/nprogress/nprogress.js"></script>

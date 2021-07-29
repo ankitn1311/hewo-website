@@ -94,7 +94,7 @@ h1,
 
 /* HOME MENU */
 .home-menu {
-  font-family: "Anton", sans-serif;
+  font-family: "monospace", sans-serif;
 }
 
 /* HEADINGS */
@@ -1008,14 +1008,14 @@ textarea,
 }
 
 /* small screens */
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
   .one-page-layout .home-heading {
-    align-self: flex-start;
-    margin-top: 7vh;
+    align-self: center;
+    margin-top: 8rem;
     text-align: left;
-    padding-left: calc(20px + 17vw);
+    padding: 8rem;
   }
-}
+} */
 /* phone landscape */
 @media only screen and (max-device-width: 991px) and (max-device-height: 500px) {
   .home-heading {
@@ -1219,7 +1219,7 @@ _:-ms-fullscreen,
 .home-menu .item-name {
   position: relative;
   display: inline-block;
-  font-size: 5.6vh;
+  font-size: 4.6vh;
   font-weight: 400;
   overflow: hidden;
   padding: 0 5px 0 32px;
@@ -1544,10 +1544,12 @@ html.one-page-layout:not(.is-ajax-page-visible) .media-grid .media-cell {
   color: rgba(255, 255, 255, 0.25);
   margin: 0;
   padding: 8px 18px;
-  font-size: calc(10px + 0.2vw); /* text-shadow: 0 0 7px #000; */
+  font-size: calc(13px + 0.2vw); /* text-shadow: 0 0 7px #000; */
   opacity: 0;
   transition-delay: 4s;
   transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 10px;
 }
 .home-footer .textwidget {
   font-size: inherit;
