@@ -64,6 +64,9 @@
     <!-- InstanceParam name="PagePlain" type="boolean" value="true" -->
     <!-- InstanceParam name="ClassicMenu" type="boolean" value="false" -->
     <style>
+      
+
+
       video {
         position: absolute;
         top: 0;
@@ -98,7 +101,7 @@
       }
 
       .dark-filter {
-   opacity: 0.3;
+        opacity: 0.3;
       }
       @media screen and (max-width: 991px) {
         .home-menu {
@@ -119,12 +122,185 @@
           text-align: center;
         }
       }
+
+      /* Body Text Color */
+body {
+  color: #555;
+}
+
+/* Link Color */
+a {
+  color: #80ffdb;
+}
+
+/* Link Hover Color */
+a:hover {
+  color: #80ffdb;
+}
+.cool-link {
+  background-image: linear-gradient(transparent 88%, #80ffdb 12%);
+}
+
+/* Headings Text Color */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+  color: #222;
+}
+
+/* Home Title Bg Color */
+.home-text-container {
+  background: #80ffdb;
+}
+
+/* Home Title Font Weight */
+.home-logo-center,
+.home-logo-left,
+.home-logo-right {
+  font-weight: 400;
+}
+
+/* HOME MENU */
+.home-menu {
+  font-family: "Montserrat", monospace;
+}
+
+/* Heading 1 Font Weight */
+h1,
+.entry-title {
+  font-weight: 800;
+}
+
+/* PRIMARY COLOR */
+.button:after,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.more-link:after,
+button:hover,
+.pagination a:hover,
+.navigation a:hover,
+.event:nth-of-type(2):after,
+.elementor-widget:nth-of-type(2) .event:after,
+.portfolio-nav a:hover,
+.skill-unit .bar .progress,
+#nprogress .bar,
+.media-date,
+.home-menu .item-name::before,
+.home-menu .item-name::after,
+.overlay-2,
+.mfp-bg {
+  background-color: #80ffdb;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #80ffdb;
+}
+.bypostauthor > article,
+.event h3,
+input:not([type="submit"]):not([type="button"]):not([type="file"]):not([type="radio"]):not([type="checkbox"]):focus,
+textarea:focus,
+input:focus,
+select:focus,
+.tabs .tab-titles li a.active,
+input[type="submit"],
+input[type="button"],
+button,
+.button,
+.more-link,
+.navigation a {
+  border-color: #80ffdb;
+}
+.event h3,
+.entry-title a:hover,
+input[type="submit"],
+input[type="button"],
+button,
+.button,
+.more-link,
+.navigation a,
+.filters .current .cool-link {
+  color: #80ffdb;
+}
+#nprogress .spinner-icon {
+  border-top-color: #80ffdb;
+  border-left-color: #80ffdb;
+}
+#color-scheme{
+  color:#80ffdb
+
+}
+
+
+    </style>
+<style>
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ffea00;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      input:checked + .slider {
+        background-color: #80ffdb;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #80ffdb;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
     </style>
   </head>
 
   <body>
     <!-- InstanceBeginEditable name="OnePageContent" -->
-
+    <span id="color-scheme" style='display: hidden'></span>
     <!-- .home-wrap -->
     <div class="home-wrap">
       <!-- HOME BG IMAGE -->
@@ -143,24 +319,24 @@
 
       <!-- .home-menu -->
       <nav class="home-menu">
-        <!-- <a href="about.html" data-slug="about">
+        <a href="about.html" data-slug="about">
           <span class="item-name">About</span>
         </a>
         <a href="portfolio.html" data-slug="portfolio">
           <span class="item-name">Highlights</span>
         </a> 
-         <a href="portfolio.html" data-slug="portfolio" id="portfolio-link">
+         <!-- <a href="portfolio.html" data-slug="portfolio" id="portfolio-link">
           <span class="item-name">Portfolio</span>
-        </a>
-        <a href="blog-latest.html" data-slug="blog">
+        </a> -->
+        <!-- <a href="blog-latest.html" data-slug="blog">
           <span class="item-name">Blog</span>
-        </a> 
+        </a> -->
          <a href="contact.html" data-slug="contact">
           <span class="item-name">Contact Us</span>
         </a>
-        <a href="contact.html" data-slug="contact">
+        <!--<a href="contact.html" data-slug="contact">
           <span class="item-name">Switch</span>
-        </a> -->
+        </a>  -->
         <!-- <p class="home-social"> -->
           <!-- </p> -->
             <!-- <button onclick="switchLocation()">Switch</button> -->
@@ -219,7 +395,10 @@
 
       <!-- .home-footer -->
       <div class="home-footer">
-        <a onclick="switchLocation()">switch</a>
+        <a onclick="switchLocation()"><label class="switch">
+          <input type="checkbox" >
+          <span class="slider round"></span>
+        </label> </a>
       </div>
       <!-- .home-footer -->
 
@@ -296,8 +475,10 @@
     <!-- SCRIPTS -->
     <script>
         function switchLocation () {
+
           location.replace("/index.html")
         }
+       
       </script>
     <script src="js/tween-max.js"></script>
     <script src="js/jquery-address.js"></script>
@@ -311,6 +492,12 @@
     <script src="js/resize-sensor.js"></script>
     <script src="js/jquery-sticky-sidebar.js"></script>
     <script src="js/main.js"></script>
+      <script >
+ $('document').ready(() =>
+
+          console.log('COLOR: ',document.getElementById('color-scheme').style)
+        )
+      </script>
   </body>
   <!-- InstanceEnd -->
 </html>

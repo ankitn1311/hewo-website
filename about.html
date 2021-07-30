@@ -53,8 +53,193 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-    <style></style>
+    <style>
+      /* * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0;
+      } */
+      .mySlides {
+        display: none !important;
+      }
+      img {
+        vertical-align: middle !important;
+      }
 
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px !important;
+        position: relative !important;
+        margin: auto !important;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer !important;
+        position: absolute !important;
+        top: 50% !important;
+        width: auto !important;
+        padding: 16px !important;
+        margin-top: -22px !important;
+        color: white !important;
+        font-weight: bold !important;
+        font-size: 18px !important;
+        transition: 0.6s ease !important;
+        border-radius: 0 3px 3px 0 !important;
+        user-select: none !important;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0 !important;
+        border-radius: 3px 0 0 3px !important;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2 !important;
+        font-size: 15px !important;
+        padding: 8px 12px !important;
+        position: absolute !important;
+        bottom: 8px !important;
+        width: 100% !important;
+        text-align: center !important;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2 !important;
+        font-size: 12px !important;
+        padding: 8px 12px !important;
+        position: absolute !important;
+        top: 0 !important;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active,
+      .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px;
+        }
+      }
+    </style>
+
+    <style>
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      input:checked + .slider {
+        background-color: #2196f3;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196f3;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+    </style>
+
+    <link rel="stylesheet" href="css/flickity.css" />
     <!-- InstanceBeginEditable name="head" -->
     <!-- InstanceEndEditable -->
 
@@ -362,12 +547,52 @@
                         </div>
                       </div>
 
+                      <!-- <div class="">
+                        <div class="">
+                          <div
+                            class="carousel"
+                            data-flickity='{ "imagesLoaded": true, "percentPosition": false }'
+                          >
+                            <img
+                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg"
+                              alt="orange tree"
+                              width="1000px"
+                            />
+                            <img
+                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg"
+                              alt="submerged"
+                            />
+                            <img
+                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg"
+                              alt="look-out"
+                            />
+                            <img
+                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg"
+                              alt="One World Trade"
+                            />
+                            <img
+                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg"
+                              alt="drizzle"
+                            />
+                            <img
+                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg"
+                              alt="cat nose"
+                            />
+                          </div>
+                        </div>
+                      </div> -->
+
                       <!-- PORTFOLIO -->
                     </div>
+
                     <!-- .entry-content -->
                   </article>
+
+                  <!-- .hentry -->
+
                   <!-- .hentry -->
                 </div>
+
                 <!-- .page-single -->
 
                 <!-- InstanceEndEditable -->
@@ -425,6 +650,7 @@
     <script src="js/resize-sensor.js"></script>
     <script src="js/jquery-sticky-sidebar.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/flickity.js"></script>
   </body>
   <!-- InstanceEnd -->
 </html>
