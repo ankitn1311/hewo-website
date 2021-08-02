@@ -18,6 +18,8 @@
 	5. MODULES
 	6. THEME
 	
+
+
    -------------------------------------------- */
 
 /*  --------------------------------------------
@@ -27,6 +29,7 @@
     -------------------------------------------- */
 
 /* ----- 1.1 ELEMENTS ----- */
+
 *,
 *:after,
 *::before {
@@ -76,29 +79,30 @@ input,
 textarea,
 select,
 input[type="file"] {
-  font-family: "Jost*", sans-serif;
+  font-family: "Amithen", "Jost*", sans-serif;
 }
 
 /* HEADING 1 */
 h1,
+h2,
 .entry-title {
-  font-family: "Jost*", sans-serif;
+  font-family: "Amithen", "Jost*", sans-serif;
 }
 
 /* HOME TITLE */
 .home-logo-center,
 .home-logo-left,
 .home-logo-right {
-  font-family: "Jost*", sans-serif;
+  font-family: "Amithen", "Jost*", sans-serif;
 }
 
 /* HOME MENU */
 .home-menu {
-  font-family: "monospace", sans-serif;
+  font-family: "Amithen", "monospace", sans-serif;
 }
 
 /* HEADINGS */
-h2,
+p,
 h3,
 h4,
 h5,
@@ -1219,10 +1223,11 @@ _:-ms-fullscreen,
 .home-menu .item-name {
   position: relative;
   display: inline-block;
-  font-size: 4.6vh;
+  font-size: 4vh;
   font-weight: 400;
+  font-family: "Amithen";
   overflow: hidden;
-  padding: 0 5px 0 32px;
+  padding: 10px 5px 0 32px;
   text-transform: uppercase;
   color: #fff;
   transform: translateY(100%);
@@ -1860,7 +1865,7 @@ html.one-page-layout:not(.is-ajax-page-visible) .media-grid .media-cell {
   left: 100%;
   width: 180%;
   height: 0;
-  border-bottom: 1px dashed #dadada;
+  border-bottom: 4px dashed #88ffdb;
 }
 .process i {
   font-size: 42px;

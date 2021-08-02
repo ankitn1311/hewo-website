@@ -2,6 +2,12 @@
   .small-screen-row {
     flex-direction: column !important;
   }
+  .reverse {
+    flex-direction: column-reverse !important;
+  }
+  .full-image-width {
+    width: 100%;
+  }
 }
 /* TABLETS */
 @media screen and (min-width: 768px) {

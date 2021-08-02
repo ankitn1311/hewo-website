@@ -26,6 +26,7 @@
 
     <!-- FONTS -->
     <link rel="stylesheet" href="css/fonts/jost/jost.css" />
+    <link rel="stylesheet" href="css/fonts/amithen/amithen.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Anton"
       rel="stylesheet"
@@ -141,7 +142,9 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #80ffdb;
+        /* background-color: #80ffdb; */
+        background-color: white;
+        box-shadow: #80ffdb 0px 0px 0px 2px, #80ffdb 0px 4px 6px -1px, #80ffdb 0px 1px 0px inset;
         -webkit-transition: 0.4s;
         transition: 0.4s;
       }
@@ -153,13 +156,15 @@
         width: 26px;
         left: 4px;
         bottom: 4px;
-        background-color: white;
+        /* background-color: white; */
+        background-color: #80ffdb;
         -webkit-transition: 0.4s;
         transition: 0.4s;
       }
 
       input:checked + .slider {
         background-color: #ffea00;
+
       }
 
       input:focus + .slider {
@@ -357,7 +362,8 @@
     <!-- SCRIPTS -->
     <script>
       function switchLocation () {
-        location.replace("/switch.html")
+        // location.replace("/switch.html")
+        location.replace("/hewo-website/switch.html")
       }
     </script>
     <script src="js/tween-max.js"></script>
