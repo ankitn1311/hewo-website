@@ -123,6 +123,10 @@ blockquote {
   font-family: "Jost*";
 }
 
+p.home-job-title {
+  font-family: "Amithen", "Jost*";
+}
+
 /* FONTELLO ICONS */
 .social-link,
 .menu-with-icons a:before,
