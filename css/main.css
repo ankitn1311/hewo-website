@@ -79,26 +79,27 @@ input,
 textarea,
 select,
 input[type="file"] {
-  font-family: "Amithen", "Jost*", sans-serif;
+  font-family: "Jost*", sans-serif;
 }
 
 /* HEADING 1 */
 h1,
 h2,
 .entry-title {
-  font-family: "Amithen", "Jost*", sans-serif;
+  font-family: "Jost*", sans-serif;
 }
 
 /* HOME TITLE */
+.itme-name,
 .home-logo-center,
 .home-logo-left,
 .home-logo-right {
-  font-family: "Amithen", "Jost*", sans-serif;
+  font-family: "Jost*", sans-serif;
 }
 
 /* HOME MENU */
 .home-menu {
-  font-family: "Amithen", "monospace", sans-serif;
+  font-family: "monospace", sans-serif;
 }
 
 /* HEADINGS */
@@ -125,6 +126,8 @@ blockquote {
 
 p.home-job-title {
   font-family: "Amithen", "Jost*";
+  text-transform: capitalize;
+  /* font-size: 5rem; */
 }
 
 /* FONTELLO ICONS */
@@ -7832,3 +7835,4 @@ button,
   border-top-color: #1851f1;
   border-left-color: #1851f1;
 }
+
