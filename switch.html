@@ -1,414 +1,401 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  class="no-js one-page-layout sound-effects"
-  data-audio-tick="audio/tick.mp3"
-  data-click-ripple-animation="yes"
->
-  <!-- InstanceBegin template="/Templates/layout.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en" class="no-js one-page-layout sound-effects" data-audio-tick="audio/tick.mp3"
+  data-click-ripple-animation="yes">
+<!-- InstanceBegin template="/Templates/layout.dwt" codeOutsideHTMLIsLocked="false" -->
 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="ikonik - Responsive HTML5 vCard Template"
-    />
-    <meta name="keywords" content="vcard, html5, portfolio" />
-    <meta name="author" content="Pixelwars" />
-    <meta name="theme-color" content="#1755cf" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ikonik - Responsive HTML5 vCard Template" />
+  <meta name="keywords" content="vcard, html5, portfolio" />
+  <meta name="author" content="Pixelwars" />
+  <meta name="theme-color" content="#1755cf" />
 
-    <title>Hewo</title>
+  <title>Hewo</title>
 
-    <!-- FAV and TOUCH ICONS -->
-    <link rel="shortcut icon" href="./images/ico/favicon.ico" />
-    <link rel="apple-touch-icon" href="./images/ico/apple-touch-icon.png" />
+  <!-- FAV and TOUCH ICONS -->
+  <link rel="shortcut icon" href="./images/ico/favicon.ico" />
+  <link rel="apple-touch-icon" href="./images/ico/apple-touch-icon.png" />
 
-    <!-- FONTS -->
-    <link rel="stylesheet" href="./css/fonts/jost/jost.css" />
-    <link rel="stylesheet" href="./css/fonts/amithen/amithen.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton"
-      rel="stylesheet"
-    />
+  <!-- FONTS -->
+  <link rel="stylesheet" href="./css/fonts/jost/jost.css" />
+  <link rel="stylesheet" href="./css/fonts/amithen/amithen.css" />
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet" />
 
-    <!-- STYLES -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="js/nprogress/nprogress.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="js/jquery.magnific-popup/magnific-popup.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/fonts/fontello/css/fontello.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/768.css" />
+  <!-- STYLES -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="js/nprogress/nprogress.css" />
+  <link rel="stylesheet" type="text/css" href="js/jquery.magnific-popup/magnific-popup.css" />
+  <link rel="stylesheet" type="text/css" href="css/fonts/fontello/css/fontello.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/768.css" />
 
-    <!-- INITIAL SCRIPTS -->
-    <script src="js/jquery.js"></script>
+  <!-- INITIAL SCRIPTS -->
+  <script src="js/jquery.js"></script>
 
-    <!-- InstanceBeginEditable name="head" -->
-    <link rel="stylesheet" type="text/css" href="css/demo3.css" />
-    <!-- InstanceEndEditable -->
+  <!-- InstanceBeginEditable name="head" -->
+  <link rel="stylesheet" type="text/css" href="css/demo3.css" />
+  <!-- InstanceEndEditable -->
 
-    <!-- InstanceParam name="OnePageLayout" type="boolean" value="true" -->
-    <!-- InstanceParam name="SoundEffects" type="boolean" value="true" -->
-    <!-- InstanceParam name="Sidebar" type="boolean" value="false" -->
-    <!-- InstanceParam name="PageDefault" type="boolean" value="false" -->
-    <!-- InstanceParam name="PageFixed" type="boolean" value="false" -->
-    <!-- InstanceParam name="PageFull" type="boolean" value="false" -->
-    <!-- InstanceParam name="PagePlain" type="boolean" value="true" -->
-    <!-- InstanceParam name="ClassicMenu" type="boolean" value="false" -->
-    <style>
-      
+  <!-- InstanceParam name="OnePageLayout" type="boolean" value="true" -->
+  <!-- InstanceParam name="SoundEffects" type="boolean" value="true" -->
+  <!-- InstanceParam name="Sidebar" type="boolean" value="false" -->
+  <!-- InstanceParam name="PageDefault" type="boolean" value="false" -->
+  <!-- InstanceParam name="PageFixed" type="boolean" value="false" -->
+  <!-- InstanceParam name="PageFull" type="boolean" value="false" -->
+  <!-- InstanceParam name="PagePlain" type="boolean" value="true" -->
+  <!-- InstanceParam name="ClassicMenu" type="boolean" value="false" -->
+  <style>
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+    }
 
+    .home-menu {
+      /* top: 120px; */
+      top: 34px;
+      display: flex;
+      right: 40px;
+      flex-direction: row;
+    }
 
-      video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.8;
-      }
-      .home-menu {
-        /* top: 120px; */
-        top: 34px;
-        display: flex;
-        right: 40px;
-        flex-direction: row;
-      }
-      .home-menu .item-name {
-        font-size: 4vh;
-      }
-      /* .home-heading { margin-top: 200px;
+    .home-menu .item-name {
+      font-size: 4vh;
+    }
+
+    /* .home-heading { margin-top: 200px;
       } */
-      .logo-text {
-        font-size: 2rem;
-        color: white;
-        margin-right: 1rem
-      }
-      
-      .play-music {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-      }
+    .logo-text {
+      font-size: 2rem;
+      color: white;
+      margin-right: 1rem
+    }
 
-      .dark-filter {
-        opacity: 0.3;
-      }
-      @media screen and (max-width: 991px) {
-        .home-menu {
-          top: 80px;
-          left: 0;
-          flex-direction: column;
-        }
-        .home-menu .item-name {
-          font-size: 4.6vh;
-        }
-        .home-job-title {
-          text-align: center;
-          font-size: 1.5rem;
-        }
-        .one-page-layout .home-heading {
-          align-self: center;
-          margin-top: 8rem;
-          text-align: center;
-        }
-      }
+    .play-music {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
 
-      /* Body Text Color */
-body {
-  color: #555;
-}
+    .dark-filter {
+      opacity: 0.3;
+    }
 
-/* Link Color */
-a {
-  color: #80ffdb;
-}
-
-/* Link Hover Color */
-a:hover {
-  color: #80ffdb;
-}
-.cool-link {
-  background-image: linear-gradient(transparent 88%, #80ffdb 12%);
-}
-
-/* Headings Text Color */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-blockquote {
-  color: #222;
-}
-
-/* Home Title Bg Color */
-.home-text-container {
-  background: #80ffdb;
-}
-
-/* Home Title Font Weight */
-.home-logo-center,
-.home-logo-left,
-.home-logo-right {
-  font-weight: 400;
-}
-
-/* HOME MENU */
-.home-menu {
-  font-family: "Montserrat", monospace;
-}
-
-/* Heading 1 Font Weight */
-h1,
-.entry-title {
-  font-weight: 800;
-}
-
-/* PRIMARY COLOR */
-.button:after,
-input[type="submit"]:hover,
-input[type="button"]:hover,
-.more-link:after,
-button:hover,
-.pagination a:hover,
-.navigation a:hover,
-.event:nth-of-type(2):after,
-.elementor-widget:nth-of-type(2) .event:after,
-.portfolio-nav a:hover,
-.skill-unit .bar .progress,
-#nprogress .bar,
-.media-date,
-.home-menu .item-name::before,
-.home-menu .item-name::after,
-.overlay-2,
-.mfp-bg {
-  background-color: #80ffdb;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: #80ffdb;
-}
-.bypostauthor > article,
-.event h3,
-input:not([type="submit"]):not([type="button"]):not([type="file"]):not([type="radio"]):not([type="checkbox"]):focus,
-textarea:focus,
-input:focus,
-select:focus,
-.tabs .tab-titles li a.active,
-input[type="submit"],
-input[type="button"],
-button,
-.button,
-.more-link,
-.navigation a {
-  border-color: #80ffdb;
-}
-.event h3,
-.entry-title a:hover,
-input[type="submit"],
-input[type="button"],
-button,
-.button,
-.more-link,
-.navigation a,
-.filters .current .cool-link {
-  color: #80ffdb;
-}
-#nprogress .spinner-icon {
-  border-top-color: #80ffdb;
-  border-left-color: #80ffdb;
-}
-#color-scheme{
-  color:#80ffdb
-
-}
-
-
-    </style>
-<style>
-      .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-      }
-
-      .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-      }
-
-      .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
+    @media screen and (max-width: 991px) {
+      .home-menu {
+        top: 80px;
         left: 0;
-        right: 0;
-        bottom: 0;
-        /* background-color: #ffea00; */
-        background-color: white;
-        /* box-shadow: #ffea00 0px 1px 4px, #ffea00 0px 0px 0px 3px; */
-        box-shadow: #ffea00 0px 0px 0px 2px, #ffea00 0px 4px 6px -1px, #ffea00 0px 1px 0px inset;
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
+        flex-direction: column;
       }
 
-      .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: #ffea00;
-        /* background-color: white; */
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
+      .home-menu .item-name {
+        font-size: 4.6vh;
       }
 
-      input:checked + .slider {
-        background-color: #80ffdb;
+      .home-job-title {
+        text-align: center;
+        font-size: 1.5rem;
       }
 
-      input:focus + .slider {
-        box-shadow: 0 0 1px #80ffdb;
+      .one-page-layout .home-heading {
+        align-self: center;
+        margin-top: 8rem;
+        text-align: center;
       }
+    }
 
-      input:checked + .slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-      }
+    /* Body Text Color */
+    body {
+      color: #555;
+    }
 
-      /* Rounded sliders */
-      .slider.round {
-        border-radius: 34px;
-      }
+    /* Link Color */
+    a {
+      color: #80ffdb;
+    }
 
-      .slider.round:before {
-        border-radius: 50%;
-      }
-    </style>
-  </head>
+    /* Link Hover Color */
+    a:hover {
+      color: #80ffdb;
+    }
 
-  <body>
-    <!-- InstanceBeginEditable name="OnePageContent" -->
-    <span id="color-scheme" style='display: hidden'></span>
-    <!-- .home-wrap -->
-    <div class="home-wrap">
-      <!-- HOME BG IMAGE -->
-      <!-- <div
+    .cool-link {
+      background-image: linear-gradient(transparent 88%, #80ffdb 12%);
+    }
+
+    /* Headings Text Color */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    blockquote {
+      color: #222;
+    }
+
+    /* Home Title Bg Color */
+    .home-text-container {
+      background: #80ffdb;
+    }
+
+    /* Home Title Font Weight */
+    .home-logo-center,
+    .home-logo-left,
+    .home-logo-right {
+      font-weight: 400;
+    }
+
+    /* HOME MENU */
+    .home-menu {
+      font-family: "Montserrat", monospace;
+    }
+
+    /* Heading 1 Font Weight */
+    h1,
+    .entry-title {
+      font-weight: 800;
+    }
+
+    /* PRIMARY COLOR */
+    .button:after,
+    input[type="submit"]:hover,
+    input[type="button"]:hover,
+    .more-link:after,
+    button:hover,
+    .pagination a:hover,
+    .navigation a:hover,
+    .event:nth-of-type(2):after,
+    .elementor-widget:nth-of-type(2) .event:after,
+    .portfolio-nav a:hover,
+    .skill-unit .bar .progress,
+    #nprogress .bar,
+    .media-date,
+    .home-menu .item-name::before,
+    .home-menu .item-name::after,
+    .overlay-2,
+    .mfp-bg {
+      background-color: #80ffdb;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: #80ffdb;
+    }
+
+    .bypostauthor>article,
+    .event h3,
+    input:not([type="submit"]):not([type="button"]):not([type="file"]):not([type="radio"]):not([type="checkbox"]):focus,
+    textarea:focus,
+    input:focus,
+    select:focus,
+    .tabs .tab-titles li a.active,
+    input[type="submit"],
+    input[type="button"],
+    button,
+    .button,
+    .more-link,
+    .navigation a {
+      border-color: #80ffdb;
+    }
+
+    .event h3,
+    .entry-title a:hover,
+    input[type="submit"],
+    input[type="button"],
+    button,
+    .button,
+    .more-link,
+    .navigation a,
+    .filters .current .cool-link {
+      color: #80ffdb;
+    }
+
+    #nprogress .spinner-icon {
+      border-top-color: #80ffdb;
+      border-left-color: #80ffdb;
+    }
+
+    #color-scheme {
+      color: #80ffdb
+    }
+  </style>
+  <style>
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /* background-color: #ffea00; */
+      background-color: white;
+      /* box-shadow: #ffea00 0px 1px 4px, #ffea00 0px 0px 0px 3px; */
+      box-shadow: #ffea00 0px 0px 0px 2px, #ffea00 0px 4px 6px -1px, #ffea00 0px 1px 0px inset;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: #ffea00;
+      /* background-color: white; */
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    input:checked+.slider {
+      background-color: white;
+    }
+
+    input:focus+.slider {
+      box-shadow: 0 0 1px #80ffdb;
+    }
+
+    input:checked+.slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- InstanceBeginEditable name="OnePageContent" -->
+  <span id="color-scheme" style='display: hidden'></span>
+  <!-- .home-wrap -->
+  <div class="home-wrap">
+    <!-- HOME BG IMAGE -->
+    <!-- <div
         class="home-bg"
         style="background-image: url(images/home/cover.jpg)"
       ></div> -->
-      <!-- HOME BG IMAGE -->
-      <video class='dark-filter' src="videos/social3.mp4" muted loop autoplay></video>
+    <!-- HOME BG IMAGE -->
+    <video class='dark-filter' src="videos/social3.mp4" muted loop autoplay></video>
 
-      <!-- HOME BG LOGO -->
-      <!-- <div class="home-bg-logo">
+    <!-- HOME BG LOGO -->
+    <!-- <div class="home-bg-logo">
         <img src="images/home/icon-bg3.svg" alt="icon" />
       </div> -->
-      <!-- HOME BG LOGO -->
+    <!-- HOME BG LOGO -->
 
-      <!-- .home-menu -->
-      <nav class="home-menu">
-        <!-- <a href="about.html" data-slug="about">
+    <!-- .home-menu -->
+    <nav class="home-menu">
+      <!-- <a href="about.html" data-slug="about">
           <span class="item-name">About</span>
         </a> -->
-        <!-- <a href="portfolio.html" data-slug="portfolio">
+      <!-- <a href="portfolio.html" data-slug="portfolio">
           <span class="item-name">Highlights</span>
         </a>  -->
-         <!-- <a href="portfolio.html" data-slug="portfolio" id="portfolio-link">
+      <!-- <a href="portfolio.html" data-slug="portfolio" id="portfolio-link">
           <span class="item-name">Portfolio</span>
         </a> -->
-        <!-- <a href="blog-latest.html" data-slug="blog">
+      <!-- <a href="blog-latest.html" data-slug="blog">
           <span class="item-name">Blog</span>
         </a> -->
-         <!-- <a href="contact.html" data-slug="contact">
+      <!-- <a href="contact.html" data-slug="contact">
           <span class="item-name">Connect</span>
         </a> -->
-        <!--<a href="contact.html" data-slug="contact">
+      <!--<a href="contact.html" data-slug="contact">
           <span class="item-name">Switch</span>
         </a>  -->
-        <!-- <p class="home-social"> -->
-          <!-- </p> -->
-            <!-- <button onclick="switchLocation()">Switch</button> -->
-      </nav> 
+      <!-- <p class="home-social"> -->
+      <!-- </p> -->
+      <!-- <button onclick="switchLocation()">Switch</button> -->
+    </nav>
 
 
-      <!-- .home-menu -->
+    <!-- .home-menu -->
 
-      <!-- .home-heading -->
-      <div class="home-heading">
-        <!-- .home-logo -->
-        <div class="home-logo">
-          <p class="home-job-title">We're Commerce</p>
-          
+    <!-- .home-heading -->
+    <div class="home-heading">
+      <!-- .home-logo -->
+      <div class="home-logo">
+        <p class="home-job-title">We're Commerce</p>
 
-          <!-- <p class="home-marquee">
+
+        <!-- <p class="home-marquee">
             Building creative websites for the world's people. Always in search
             of the great user experience. Building creative websites for the
             world's people. Always in search of the great user experience.
           </p> -->
-          <!-- <i class="home-play-store">
+        <!-- <i class="home-play-store">
           </i>
           <i class="home-app-store">
           </i> -->
-          <i class="home-logo-left"><span>We're One</span></i>
-          <i class="home-logo-center">
-            <span class="home-text-container">
-              <span class="home-text-container-placeholder"
-                >Launching Soon</span
-              >
-            </span>
-            <span class="home-text" style="color: #000000">Launching Soon</span>
-            <span class="home-icon">
-              <img src="images/ico/google.ico" alt="Play Store" />
-              <!-- <img src="images/home/icon3.svg" alt="icon" /> -->
-            </span>
-            <span class="home-icon">
-              <img src="images/ico/apple.ico" alt="Apple Store" />
-              <!-- <img src="images/home/icon3.svg" alt="icon" /> -->
-            </span>
-          </i>
-          <!-- <i class="home-logo-right"><span>We're Social</span></i> -->
-        </div>
-        <!-- .home-logo -->
+        <i class="home-logo-left"><span>We're One</span></i>
+        <i class="home-logo-center">
+          <span class="home-text-container">
+            <span class="home-text-container-placeholder">Launching Soon</span>
+          </span>
+          <span class="home-text" style="color: #000000">Launching Soon</span>
+          <span class="home-icon">
+            <img src="images/ico/google.ico" alt="Play Store" />
+            <!-- <img src="images/home/icon3.svg" alt="icon" /> -->
+          </span>
+          <span class="home-icon">
+            <img src="images/ico/apple.ico" alt="Apple Store" />
+            <!-- <img src="images/home/icon3.svg" alt="icon" /> -->
+          </span>
+        </i>
+        <!-- <i class="home-logo-right"><span>We're Social</span></i> -->
       </div>
-      <!-- .home-heading -->
+      <!-- .home-logo -->
+    </div>
+    <!-- .home-heading -->
 
-      <!-- .home-social -->
-      <!-- <p class="home-social">
+    <!-- .home-social -->
+    <!-- <p class="home-social">
         <a class="social-link facebook" href="#"></a>
         <a class="social-link linkedin" href="#"></a>
         <a class="social-link behance" href="#"></a>
         <a class="social-link dribbble" href="#"></a>
       </p> -->
-      <!-- .home-social -->
+    <!-- .home-social -->
 
-      <!-- .home-footer -->
-      <div class="home-footer">
-        <a onclick="switchLocation()"><label class="switch">
-          <input type="checkbox" >
+    <!-- .home-footer -->
+    <div class="home-footer">
+      <a onclick="switchLocation()"><label class="switch">
+          <input type="checkbox" checked>
           <span class="slider round"></span>
         </label> </a>
-      </div>
-      <!-- .home-footer -->
+    </div>
+    <!-- .home-footer -->
 
-      <!-- FULL SCREEN TOGGLE -->
-      <!-- <div class="full-screen-wrap">
+    <!-- FULL SCREEN TOGGLE -->
+    <!-- <div class="full-screen-wrap">
         <div class="top-left"></div>
         <div class="top-left-horiz"></div>
         <div class="top-right"></div>
@@ -418,94 +405,93 @@ button,
         <div class="bottom-right"></div>
         <div class="bottom-right-horiz"></div>
       </div> -->
-      <!-- FULL SCREEN TOGGLE -->
+    <!-- FULL SCREEN TOGGLE -->
 
-      <!-- REMOVE THIS MARKUP TO DISABLE BG AUDIO -->
+    <!-- REMOVE THIS MARKUP TO DISABLE BG AUDIO -->
 
-      <!-- <div class="bg-music-confirm">
+    <!-- <div class="bg-music-confirm">
         <p>Autoplay Music?</p>
         <p><a class="bg-music-yes">Yeah!</a> <a class="bg-music-no">Nope</a></p>
       </div> -->
 
-      <!-- HOME BG MUSIC -->
-      <div id="play-music" class="play-music autoplay">
-        <div id="music-animation" class="music-animation">
+    <!-- HOME BG MUSIC -->
+    <div id="play-music" class="play-music autoplay">
+      <div id="music-animation" class="music-animation">
 
-          <span class="music-bar bar1"></span>
-          <span class="music-bar bar2"></span>
-          <span class="music-bar bar3"></span>
-          <span class="music-bar bar4"></span>
-          <span class="music-bar bar5"></span>
-        </div>
-        <div class="music-toggle" id="music-toggle">
-          <a id="toggle" data-on-text="Music on" data-off-text="Music off"
-            >Music off</a
-          >
-        </div>
-        <span class="logo-text">
-            <img src="./images/logo/wo-commerce.svg" width="100px"/>
-          <span>
+        <span class="music-bar bar1"></span>
+        <span class="music-bar bar2"></span>
+        <span class="music-bar bar3"></span>
+        <span class="music-bar bar4"></span>
+        <span class="music-bar bar5"></span>
       </div>
-
-      <audio id="bg-music" loop src="audio/music4.mp3"></audio>
-      <!-- HOME BG MUSIC -->
-
-      <!-- REMOVE THIS MARKUP TO DISABLE BG AUDIO -->
+      <div class="music-toggle" id="music-toggle">
+        <a id="toggle" data-on-text="Music on" data-off-text="Music off">Music off</a>
+      </div>
+      <span class="logo-text">
+        <img src="./images/logo/wo-commerce.svg" width="100px" />
+        <span>
     </div>
-    <!-- .home-wrap -->
 
-    <!-- .one-page-content-->
-    <div class="one-page-content">
-      <a href="/" class="close-page">
-        <span class="close-text"></span>
-      </a>
+    <audio id="bg-music" loop src="audio/music4.mp3"></audio>
+    <!-- HOME BG MUSIC -->
 
-      <div class="content-wrap"></div>
-    </div>
-    <!-- .one-page-content-->
+    <!-- REMOVE THIS MARKUP TO DISABLE BG AUDIO -->
+  </div>
+  <!-- .home-wrap -->
 
-    <!-- page transition overlays -->
-    <div class="overlay overlay-1"></div>
-    <div class="overlay overlay-2"></div>
-    <!-- page transition overlays -->
+  <!-- .one-page-content-->
+  <div class="one-page-content">
+    <a href="/" class="close-page">
+      <span class="close-text"></span>
+    </a>
 
-    <!-- InstanceEndEditable -->
+    <div class="content-wrap"></div>
+  </div>
+  <!-- .one-page-content-->
 
-    <!-- InstanceBeginEditable name="Body-End-Content" -->
+  <!-- page transition overlays -->
+  <div class="overlay overlay-1"></div>
+  <div class="overlay overlay-2"></div>
+  <!-- page transition overlays -->
 
-    <!-- PORTFOLIO SINGLE AJAX CONTENT CONTAINER -->
-    <div class="p-overlay"></div>
-    <div class="p-overlay"></div>
+  <!-- InstanceEndEditable -->
 
-    <!-- InstanceEndEditable -->
+  <!-- InstanceBeginEditable name="Body-End-Content" -->
 
-    <!-- SCRIPTS -->
-    <script>
-        function switchLocation () {
+  <!-- PORTFOLIO SINGLE AJAX CONTENT CONTAINER -->
+  <div class="p-overlay"></div>
+  <div class="p-overlay"></div>
 
-          location.replace("https://ankitn1311.github.io/hewo-website/index.html")
-          // location.replace("/index.html")
-        }
-       
-      </script>
-    <script src="js/tween-max.js"></script>
-    <script src="js/jquery-address.js"></script>
-    <script src="js/nprogress/nprogress.js"></script>
-    <script src="js/jquery-isotope.js"></script>
-    <script src="js/imagesloaded.js"></script>
-    <script src="js/jquery-fitvids.js"></script>
-    <script src="js/jquery.magnific-popup/jquery-magnific-popup.js"></script>
-    <script src="js/jquery-easing.js"></script>
-    <script src="js/jquery-validate.js"></script>
-    <script src="js/resize-sensor.js"></script>
-    <script src="js/jquery-sticky-sidebar.js"></script>
-    <script src="js/main.js"></script>
-      <script >
- $('document').ready(() =>
+  <!-- InstanceEndEditable -->
 
-          console.log('COLOR: ',document.getElementById('color-scheme').style)
-        )
-      </script>
-  </body>
-  <!-- InstanceEnd -->
+  <!-- SCRIPTS -->
+  <script>
+    function switchLocation() {
+
+      location.replace("https://ankitn1311.github.io/hewo-website/index.html")
+      // location.replace("/index.html")
+    }
+
+  </script>
+  <script src="js/tween-max.js"></script>
+  <script src="js/jquery-address.js"></script>
+  <script src="js/nprogress/nprogress.js"></script>
+  <script src="js/jquery-isotope.js"></script>
+  <script src="js/imagesloaded.js"></script>
+  <script src="js/jquery-fitvids.js"></script>
+  <script src="js/jquery.magnific-popup/jquery-magnific-popup.js"></script>
+  <script src="js/jquery-easing.js"></script>
+  <script src="js/jquery-validate.js"></script>
+  <script src="js/resize-sensor.js"></script>
+  <script src="js/jquery-sticky-sidebar.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $('document').ready(() =>
+
+      console.log('COLOR: ', document.getElementById('color-scheme').style)
+    )
+  </script>
+</body>
+<!-- InstanceEnd -->
+
 </html>

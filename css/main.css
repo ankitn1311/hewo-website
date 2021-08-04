@@ -1189,7 +1189,7 @@ textarea,
   margin: 0 auto;
   white-space: normal;
   box-sizing: border-box;
-  font-size: calc(30px + 0.14vw);
+  font-size: calc(50px + 0.14vw);
   font-weight: 700;
   position: absolute;
   bottom: 106%;
@@ -1872,7 +1872,7 @@ html.one-page-layout:not(.is-ajax-page-visible) .media-grid .media-cell {
   left: 100%;
   width: 180%;
   height: 0;
-  border-bottom: 4px dashed #88ffdb;
+  border-bottom: 4px dashed #ced0c9;
 }
 .process i {
   font-size: 42px;
@@ -1893,7 +1893,7 @@ html .process img {
 }
 .row > div:first-child .process,
 .elementor-column:first-child .process {
-  background: #eaebe7;
+  background: #80ffdb;
 }
 .row > div:first-child .process i,
 .row > div:last-child .process i,
@@ -1914,7 +1914,7 @@ html .process img {
 }
 .row > div:last-child .process,
 .elementor-column:last-child .process {
-  background: #ebebe7;
+  background: #ffea00;
 }
 
 /* FUN FACT */
