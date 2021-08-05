@@ -1055,6 +1055,7 @@ textarea,
   display: inline-block;
 }
 .home-logo-left {
+  font-family: 'Amithen';
   padding-left: 40px;
   overflow: hidden;
 }
@@ -1189,12 +1190,12 @@ textarea,
   margin: 0 auto;
   white-space: normal;
   box-sizing: border-box;
-  font-size: calc(50px + 0.14vw);
+  font-size: calc(70px + 0.14vw);
   font-weight: 700;
   position: absolute;
   bottom: 106%;
   color: #fff;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.44);
@@ -1224,13 +1225,13 @@ _:-ms-fullscreen,
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 1.8vh 0;
+  margin: 1.2vh 0;
   overflow: hidden;
 }
 .home-menu .item-name {
   position: relative;
   display: inline-block;
-  font-size: 4vh;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: "Amithen";
   overflow: hidden;
@@ -1828,6 +1829,7 @@ html.one-page-layout:not(.is-ajax-page-visible) .media-grid .media-cell {
   padding: 36px 24px;
   text-align: center;
   margin-bottom: 30px;
+  min-height: 250px;
   border: 1px solid #ededed;
 }
 .service i,
@@ -1886,6 +1888,7 @@ html .process img {
 .process h4 {
   margin: 22px 0 0;
   font-size: 12px;
+  text-transform: none;
 }
 .row [class^="col-"]:nth-child(3n) .process:after,
 .elementor-column:nth-child(3n) .process:after {
@@ -1893,7 +1896,7 @@ html .process img {
 }
 .row > div:first-child .process,
 .elementor-column:first-child .process {
-  background: #80ffdb;
+  background: #ffea00;
 }
 .row > div:first-child .process i,
 .row > div:last-child .process i,
@@ -1914,7 +1917,7 @@ html .process img {
 }
 .row > div:last-child .process,
 .elementor-column:last-child .process {
-  background: #ffea00;
+  background: #80ffdb;
 }
 
 /* FUN FACT */

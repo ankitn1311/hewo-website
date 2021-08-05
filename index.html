@@ -73,6 +73,7 @@
     /* .home-heading { margin-top: 200px;
       } */
     .logo-text {
+      transform: scale(1.3);
       font-size: 2rem;
       color: white;
       margin-right: 1rem
@@ -88,27 +89,43 @@
       opacity: 0.3;
     }
 
+      /* .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      } */
     @media screen and (max-width: 991px) {
       .home-menu {
-        top: 80px;
+        /* top: 80px; */
         left: 0;
         flex-direction: column;
       }
 
       .home-menu .item-name {
-        font-size: 4.6vh;
+        font-size: 1.5rem;
         font-family: "Jost*", sans !important;
       }
 
       .home-job-title {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
       }
 
       .one-page-layout .home-heading {
         align-self: center;
-        margin-top: 8rem;
+        margin-top: 6rem;
         text-align: center;
+      }
+      .media-box {
+        margin-bottom: 0;
+      }
+      .side-text {
+        padding: 0 3rem  !important;
+      }
+      .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
   </style>
@@ -133,9 +150,9 @@
       left: 0;
       right: 0;
       bottom: 0;
-      /* background-color: #80ffdb; */
+      /* background-color: #ffea00; */
       background-color: white;
-      box-shadow: #80ffdb 0px 0px 0px 2px, #80ffdb 0px 4px 6px -1px, #80ffdb 0px 1px 0px inset;
+      box-shadow: #ffea00 0px 0px 0px 2px, #ffea00 0px 4px 6px -1px, #ffea00 0px 1px 0px inset;
       -webkit-transition: 0.4s;
       transition: 0.4s;
     }
@@ -148,18 +165,20 @@
       left: 4px;
       bottom: 4px;
       /* background-color: white; */
-      background-color: #80ffdb;
+      background-color: #ffea00;
       -webkit-transition: 0.4s;
       transition: 0.4s;
     }
 
     input:checked+.slider {
-      background-color: #ffea00;
-
+      /* background-color: #80ffdb; */
+      background-color: white;
+      box-shadow: #ffea00 0px 0px 0px 2px, #ffea00 0px 4px 6px -1px, #ffea00 0px 1px 0px inset;
     }
 
     input:focus+.slider {
-      box-shadow: 0 0 1px #ffea00;
+      /* box-shadow: 0 0 1px #80ffdb; */
+      box-shadow: #ffea00 0px 0px 0px 2px, #ffea00 0px 4px 6px -1px, #ffea00 0px 1px 0px inset;
     }
 
     input:checked+.slider:before {
@@ -310,6 +329,7 @@
       </div>
       <div class="music-toggle" id="music-toggle">
         <a id="toggle" data-on-text="Music on" data-off-text="Music off">Music off</a>
+
       </div>
       <span class="logo-text">
         <img src="./images/logo/wo-social.svg" width="100px" />
