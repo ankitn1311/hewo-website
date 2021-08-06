@@ -1055,7 +1055,7 @@ textarea,
   display: inline-block;
 }
 .home-logo-left {
-  font-family: 'Amithen';
+  font-family: "Amithen";
   padding-left: 40px;
   overflow: hidden;
 }
@@ -1882,7 +1882,8 @@ html.one-page-layout:not(.is-ajax-page-visible) .media-grid .media-cell {
 }
 html .process img {
   width: 100%;
-  max-height: 42px;
+  /* max-height: 42px; */
+  /* opacity: 0.4; */
   margin: 0 auto;
 }
 .process h4 {
@@ -7838,4 +7839,3 @@ button,
   border-top-color: #1851f1;
   border-left-color: #1851f1;
 }
-
