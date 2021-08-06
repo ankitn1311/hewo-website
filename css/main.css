@@ -1056,6 +1056,7 @@ textarea,
 }
 .home-logo-left {
   font-family: "Amithen";
+  padding-top: 10px;
   padding-left: 40px;
   overflow: hidden;
 }
@@ -1897,7 +1898,7 @@ html .process img {
 }
 .row > div:first-child .process,
 .elementor-column:first-child .process {
-  background: #ffea00;
+  background: #80ffdb;
 }
 .row > div:first-child .process i,
 .row > div:last-child .process i,
@@ -1918,7 +1919,7 @@ html .process img {
 }
 .row > div:last-child .process,
 .elementor-column:last-child .process {
-  background: #80ffdb;
+  background: #ffea00;
 }
 
 /* FUN FACT */
